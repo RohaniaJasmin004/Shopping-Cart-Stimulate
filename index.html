@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="fa">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shopping Cart Simulation</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>Shopping Cart Simulation</h1>
+    <div class="search-wrap">
+      <input id="searchInput" type="search" placeholder="جستجوی محصولات..." />
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="products-section">
+      <h2>محصولات</h2>
+      <div id="productsList" class="products-list"></div>
+    </section>
+
+    <aside class="cart-section">
+      <h2>سبد خرید</h2>
+      <div id="cartItems" class="cart-items"></div>
+      <div class="cart-summary">
+        <div>جمع کل: <span id="cartTotal">0</span> افغانی</div>
+        <button id="clearCartBtn" class="btn danger">پاک کردن سبد</button>
+      </div>
+    </aside>
+  </main>
+
+  <div id="toast" class="toast" aria-live="polite"></div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
